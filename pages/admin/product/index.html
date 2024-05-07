@@ -1,0 +1,54 @@
+<h2>Registro de produtos</h2>
+<form action="frmAddProduto" id="addProduto" class="frmInserir">
+  <fieldset>
+    <legend>Novo produto</legend>
+    <table>
+      <tr>
+        <th>Categoria</th>
+        <td>
+          <select id="category">
+            <option value="">Selecione</option>
+            <option value="GELADEIRA">Geladeira</option>
+            <option value="FREEZER">Freezer</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Marca</th>
+        <td>
+          <select id="brand" id="selMarca">
+            <option value="" >Selecione uma marca</option>
+            <option value="BRASTEMP">Brastemp</option>
+            <option value="CONSUL">Consul</option>
+            <option value="ELETROLUX">Eletrolux</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Modelo</th>
+        <td>
+          <input type="text" id="model">
+        </td>
+      </tr>
+      <tr>
+        <th>Capacidade(Litros)</th>
+        <td>
+          <input type="number" id="capacity">
+        </td>
+      </tr>
+      <tr>
+        <th>Valor (R$)</th>
+        <td>
+          <input type="number" id="price">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button type="button" onclick="$ctrl.saveProduct()" formaction="">Cadastrar</button>
+          <button type="reset">Limpar</button>
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+</form>
+<script src="/js/admin/product/product.js"></script>
